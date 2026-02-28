@@ -5,21 +5,21 @@
 class Reprac < Formula
   desc "Track unreleased changes across your repos — never forget to deploy again."
   homepage "https://github.com/adhaniscuber/reprac"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adhaniscuber/reprac/releases/download/v0.1.0/reprac_darwin_amd64.tar.gz"
-      sha256 "3d4bccc891beba00b9de633e3fd56b79432efede3c31e8dde13bbdad12b5cf63"
+      url "https://github.com/adhaniscuber/reprac/releases/download/v0.1.1/reprac_darwin_amd64.tar.gz"
+      sha256 "a1d46484d3e8dd1e0202c08ff35160d1cc5a390f695d0d0683b92c878852d41d"
 
       define_method(:install) do
         bin.install "reprac"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adhaniscuber/reprac/releases/download/v0.1.0/reprac_darwin_arm64.tar.gz"
-      sha256 "da7c3b530e318d0439b093dea15c5f40546442b14eba68c53caf4c7337227959"
+      url "https://github.com/adhaniscuber/reprac/releases/download/v0.1.1/reprac_darwin_arm64.tar.gz"
+      sha256 "fae0789b8ad622bf300deb85675636eb97dcb653f5f5ee0dd67d1e982ba1f746"
 
       define_method(:install) do
         bin.install "reprac"
@@ -29,15 +29,15 @@ class Reprac < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adhaniscuber/reprac/releases/download/v0.1.0/reprac_linux_amd64.tar.gz"
-      sha256 "b74a94d166d488c498243ef6804bf6bed4ef0056e005b4de7ac0dbae2bd42c59"
+      url "https://github.com/adhaniscuber/reprac/releases/download/v0.1.1/reprac_linux_amd64.tar.gz"
+      sha256 "239a1fb85f9a3893d83c554d5b52ad0a246f54eb3d0adf6e4aad37cc71286359"
       define_method(:install) do
         bin.install "reprac"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adhaniscuber/reprac/releases/download/v0.1.0/reprac_linux_arm64.tar.gz"
-      sha256 "980cb83430192146f406edae9ff84f46884f4a97c2adfa8766c02220582da450"
+      url "https://github.com/adhaniscuber/reprac/releases/download/v0.1.1/reprac_linux_arm64.tar.gz"
+      sha256 "4a6ac564a59882481a38aa99f9afc4a68326bc72c3a7813f9b26ada353700058"
       define_method(:install) do
         bin.install "reprac"
       end
