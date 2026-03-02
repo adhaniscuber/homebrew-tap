@@ -5,21 +5,21 @@
 class Greenlight < Formula
   desc "TUI dashboard for GitHub Actions deployment approvals."
   homepage "https://github.com/wirya/greenlight"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/adhaniscuber/greenlight/releases/download/v0.1.0/greenlight_darwin_amd64.tar.gz"
-      sha256 "9c646e01f36e347350879f2a65f94b65050e7496906ed4be23968873740a0ce7"
+      url "https://github.com/adhaniscuber/greenlight/releases/download/v0.1.1/greenlight_darwin_amd64.tar.gz"
+      sha256 "4645acd9b7dc72f8bb59cb80d9216df6cccaf8a9cf4d1ef5f4e217e461d5191d"
 
       define_method(:install) do
         bin.install "greenlight"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/adhaniscuber/greenlight/releases/download/v0.1.0/greenlight_darwin_arm64.tar.gz"
-      sha256 "dd87b2014f36b57f09508b74e4bd03b03b524123a5c529eeb73fe1e57e1544ce"
+      url "https://github.com/adhaniscuber/greenlight/releases/download/v0.1.1/greenlight_darwin_arm64.tar.gz"
+      sha256 "5da4a2c4218ca3554d952bee2ab26bd6725c54f3a24b56b90fda1b96b80b5e7a"
 
       define_method(:install) do
         bin.install "greenlight"
@@ -29,15 +29,15 @@ class Greenlight < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adhaniscuber/greenlight/releases/download/v0.1.0/greenlight_linux_amd64.tar.gz"
-      sha256 "a4670d64f8c73db9c93669b88c414afe33fe7c58024dfaedb4a62e1bd835c408"
+      url "https://github.com/adhaniscuber/greenlight/releases/download/v0.1.1/greenlight_linux_amd64.tar.gz"
+      sha256 "1818e56dd641088d86c01e30901962c81e372139a33d3fc099821b0dfcec1459"
       define_method(:install) do
         bin.install "greenlight"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/adhaniscuber/greenlight/releases/download/v0.1.0/greenlight_linux_arm64.tar.gz"
-      sha256 "81eee23b29673b3c065b10f1b46161683dce8f73179e2bbed06cd4ef21faa4be"
+      url "https://github.com/adhaniscuber/greenlight/releases/download/v0.1.1/greenlight_linux_arm64.tar.gz"
+      sha256 "ecb8d461a04a958651210a5fbb87fe50235ea7b11d9d66c92e11d456c4832939"
       define_method(:install) do
         bin.install "greenlight"
       end
